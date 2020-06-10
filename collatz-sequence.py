@@ -1,5 +1,5 @@
+#Collatz sequence
 #the simplest impossible math problem
-#
 #
 #define function collatz()
 def collatz(number):
