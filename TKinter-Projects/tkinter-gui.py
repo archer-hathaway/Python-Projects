@@ -1,16 +1,19 @@
 #import tkinter module
 import tkinter as tk
+#import requests module 
 import requests as requests
 
 
 #define function
 #function displays text in the root window
+
+#function to get open notify requests
 def iss_location():    
     iss_location_now = requests.get('http://api.open-notify.org/iss-now.json').text
     #location_string = print(iss_location) 
     tk.Label(root, text=iss_location_now).pack()
    
-
+#functions to test buttons
 def red_apple():
     tk.Label(root,text="Always looks red").pack()
     
