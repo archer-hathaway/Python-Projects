@@ -64,6 +64,6 @@ def cars_updated(year_value):
 #printing out the result of the updated_dict sorted by year
 a = sorted(cars_updated(cars_dict(cars)).items(),key=lambda x:x[1])
 for k,v in a:
-    print(k,v,sep=' :')
+    print(k,v,sep=':')
 #pprint.pprint(a)
 #pprint.pprint(cars)
