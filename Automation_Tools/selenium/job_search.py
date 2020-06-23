@@ -22,8 +22,8 @@ driver.find_element_by_xpath('//*[@id="TopNav"]/nav/div/div/div[4]/div[1]/a').cl
 #delay of 2secs
 time.sleep(2)
 #log-in details 
-driver.find_element_by_name('username').send_keys('micodian83@gmail.com')
-driver.find_element_by_name('password').send_keys('*Venturus09')
+driver.find_element_by_name('username').send_keys('username@gmail.com')
+driver.find_element_by_name('password').send_keys('*')
 time.sleep(2)
 driver.find_element_by_name('submit').click()
 time.sleep(2)
@@ -43,30 +43,11 @@ for job in jobs_List:
 
 
 jobs_outfile.close()
-#If user has a log-in info
-#driver.find_element_by_xpath('//*[@id="LoginModal"]/div/div/div[2]/div[2]/div[2]/div/div/div/div[3]/form/div[1]/div').send_keys('micodian83@gmail.com')
-#driver.find_element_by_xpath('//*[@id="userPassword"]').send_keys('*Venturus09')
-#driver.find_element_by_xpath('//*[@id="LoginModal"]/div/div/div[2]/div[2]/div[2]/div/div/div/div[3]/form/div[3]/div[1]/button').click()
+
 #To create an account
-#driver.find_element_by_xpath('//*[@id="userEmail"]').send_keys('micodian83@gmail.com')
-#driver.find_element_by_xpath('//*[@id="userPassword"]').send_keys('*Venturus09')
+#driver.find_element_by_xpath('//*[@id="userEmail"]').send_keys('username@gmail.com')
+#driver.find_element_by_xpath('//*[@id="userPassword"]').send_keys('*password')
 #driver.find_element_by_xpath('//*[@id="what"]').send_keys('software Engineer')
 
 
 
-
-"""
-jobs_outfile = open('.jobs.txt','w')
-for job in job_list:
-    jobs_outfile.write(job.text)
-
-//*[@id="JAModal"]/div/div[2]/span/svg
-
-//*[@id="MainCol"]/div[1]/ul
-
-//*[@id="InlineLoginModule"]/div/div/div/div/div/div[3]/form/div[3]/button
-//*[@id="userEmail"]
-jobs_outfile.close()
-#//*[@id="popover-form-container"]
-#//*[@class="jobsearch-SerpJobCard unified row result clickcard"]
-"""
