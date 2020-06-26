@@ -12,7 +12,7 @@ try:
     #PATH_OF_IMAGE= input(r'type/paste the path to the image here. E.g C:\Users\PathOfImage.png: ')
     #raise PATH_OF_IMAGE
 except FileNotFoundError:
-    print('Please check the path again')    
+    print('Could not find image path')    
 #function to show items retreived in readable variables
 #When the city name or zip code is provided then function should show:
 #name of the city-> city_name
@@ -32,7 +32,7 @@ def weather_content(current_weather):
     return result
 
 
-#3ad1bea45412a571230db814e22d0fc8 
+ 
 
 #function to get the result of the city or zip code
 #contains the provided api
@@ -40,7 +40,7 @@ def weather_content(current_weather):
 #create object, response that is used to get the requests
 #current weather stores the json parameters
 def show_weather(city):
-    api_key= '3ad1bea45412a571230db814e22d0fc8'
+    api_key= ''
     url = 'https://api.openweathermap.org/data/2.5/weather'
     param_dict = {'APPID': api_key,'q': city,'units': 'imperial'}
     response = requests.get(url, params=param_dict)
@@ -49,6 +49,7 @@ def show_weather(city):
 
     
 #root window to place content in 
+#contains title of the App
 root = tk.Tk()
 root.title('Michaels Weather App')
 
