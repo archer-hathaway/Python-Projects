@@ -5,6 +5,7 @@
 #my_list holds the list of names and score e.g [(harry,88.3),(john,90.2)]
 #score_list holds the list of scored provided
 #both list are sorted to get the lowest score associated with the name/names
+import requests
 
 if __name__ == '__main__':        
     score_list=[]
@@ -22,3 +23,6 @@ if __name__ == '__main__':
 
 
 
+
+
+print(show_weather('boston'))
