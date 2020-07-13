@@ -36,7 +36,7 @@ def weather_content(current_weather):
 
     return result
 
-#3ad1bea45412a571230db814e22d0fc8
+#
 
 
 
@@ -46,7 +46,7 @@ def weather_content(current_weather):
 #create object, response that is used to get the requests
 #current weather stores the json parameters
 def show_weather(city):
-    api_key= '951fa0ffbf355ac538dfb8f98a7ea0ad'
+    api_key= ''
     url = 'https://api.openweathermap.org/data/2.5/weather'
     param_dict = {'APPID': api_key,'q': city,'units': 'imperial'}
     response = requests.get(url, params=param_dict)
